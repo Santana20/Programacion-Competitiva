@@ -7,6 +7,9 @@ typedef long long ll;
 
 int main()
 {
-    cout << "Hello World!";
+    IOS
+    
+    //codigo
+    
     return 0;
 }
