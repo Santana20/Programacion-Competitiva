@@ -141,6 +141,7 @@ int main()
         invalid.clear();
         contador = 0;
         veces = 0;
+        validaciones = 0;
         queens.assign(n, -1); disponiblecolumn.assign(n, true);
         invalid.assign(n, vector<int>(n));
         for ( int i = 0; i < n; ++i )
@@ -162,6 +163,5 @@ int main()
         cout << "numero de veces: " << veces << '\n';
         cout << "numero de validaciones: " << validaciones << '\n';
     }
-
     return 0;
 }
