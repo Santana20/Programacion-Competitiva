@@ -158,7 +158,12 @@ int main()
             for ( auto y : x ) cout << y;
             cout << '\n';
         }*/
+        clock_t ini = clock();
         bt(0);
+        clock_t fin = clock();
+
+        double tiempo = (double)( fin - ini ) / CLOCKS_PER_SEC;
+        cout << "runtime: " << tiempo << '\n';
         cout << "Case " << caso++ << ": " << contador << '\n';
         cout << "numero de veces: " << veces << '\n';
         cout << "numero de validaciones: " << validaciones << '\n';
