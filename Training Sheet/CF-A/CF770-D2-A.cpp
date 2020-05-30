@@ -1,26 +1,19 @@
 #include <bits/stdc++.h>
 
 using namespace std; 
-
 #define IOS ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 typedef long long ll;
 
 int main()
 {
     //IOS
-
-    ll k; int r, n = 1;
-
-    cin >> k >> r;
-
-    while( 1 )
+    
+    int n, k, letter = 97;
+    cin >> n >> k;
+    for ( int i = 0, aux = 0; i < n; ++i, ++aux )
     {
-        if ( ( k * n ) % 10 == r || ( k * n ) % 10 == 0 )
-        {
-            break;
-        }
-        ++n;
+        aux = aux % k;
+        cout << (char)(letter + aux);
     }
-    cout << n;
     return 0;
 }

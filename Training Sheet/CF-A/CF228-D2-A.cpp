@@ -1,26 +1,21 @@
 #include <bits/stdc++.h>
 
 using namespace std; 
-
 #define IOS ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 typedef long long ll;
 
 int main()
 {
     //IOS
+    set<int> colors; int aux;
 
-    ll k; int r, n = 1;
-
-    cin >> k >> r;
-
-    while( 1 )
+    for ( int i = 0; i < 4; ++i )
     {
-        if ( ( k * n ) % 10 == r || ( k * n ) % 10 == 0 )
-        {
-            break;
-        }
-        ++n;
+        cin >> aux;
+        colors.insert(aux);
     }
-    cout << n;
+
+    cout << ( 4 - colors.size() );
+
     return 0;
 }

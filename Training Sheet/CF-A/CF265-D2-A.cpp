@@ -1,26 +1,21 @@
 #include <bits/stdc++.h>
 
 using namespace std; 
-
 #define IOS ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 typedef long long ll;
 
 int main()
 {
     //IOS
+    
+    string inst, rocks; int ans = 0;
 
-    ll k; int r, n = 1;
+    cin >> rocks >> inst;
 
-    cin >> k >> r;
-
-    while( 1 )
+    for ( auto x : inst )
     {
-        if ( ( k * n ) % 10 == r || ( k * n ) % 10 == 0 )
-        {
-            break;
-        }
-        ++n;
+        if ( x == rocks[ans] ) ++ans;
     }
-    cout << n;
+    cout << ( ans + 1 );
     return 0;
 }
