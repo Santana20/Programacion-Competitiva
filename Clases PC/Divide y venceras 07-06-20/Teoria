@@ -1,0 +1,11 @@
+Divide y Venceras: Recursive approach (Enfoque/propuesta recursivo)
+
+La clave de este tema es dividir los problemas en subproblemas, para 
+que, de esta forma, se pueda reducir el problema grande en subproblemas.
+Luego, combinamos las soluciones de los subproblemas para obtener la 
+solucion del problema principal.
+
+1. DIVIDIR el problema en subproblemas.
+2. "VENCER", es decir, resolvemos los subproblemas.
+2. COMBINAR los resultados de los subproblemas para obtener la respuesta
+del problemas principal.
